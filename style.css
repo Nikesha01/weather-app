@@ -235,3 +235,77 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+
+
+.hourly-container {
+    width: 100%;
+    height: 280px;
+    background-color: #131e32;
+    border: 1px solid #202e46;
+    border-radius: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.hourly-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.hourly-header h3 {
+    color: #eef2fa;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+#rain-message {
+    color: #55c9e8;
+    font-size: 12px;
+}
+
+.hourly-chart {
+    width: 100%;
+    height: 125px;
+}
+
+#hourly-graph {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+#temperature-line {
+    fill: none;
+    stroke: #ffb33f;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#temperature-dot {
+    fill: #ffb33f;
+}
+
+#rain-highlight {
+    fill: #203b4e;
+}
+
+.hourly-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.hourly-labels span {
+    color: #9aaac0;
+    font-size: 11px;
+    white-space: nowrap;
+}

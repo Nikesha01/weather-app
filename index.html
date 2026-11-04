@@ -76,7 +76,33 @@
                     </div>
                 </div>
 
-                <div class="main-container">
+                <div class="hourly-container">
+
+                    <div class="hourly-header">
+                        <h3>Today, hour by hour</h3>
+                        <span id="rain-message">Hourly forecast</span>
+                    </div>
+
+                    <div class="hourly-chart">
+                        <svg id="hourly-graph" viewBox="0 0 760 150" preserveAspectRatio="none">
+
+                            <rect id="rain-highlight" x="440" y="15" width="130" height="80" rx="12" fill="#203b4e" />
+
+                            <path id="temperature-line" d="M 15 105 Q 140 90 250 55 T 745 115" fill="none"
+                                stroke="#ffb33f" stroke-width="3.5" stroke-linecap="round" />
+
+                            <circle id="temperature-dot" cx="290" cy="55" r="6" fill="#ffb33f" />
+                        </svg>
+                    </div>
+
+                    <div id="hourly-labels" class="hourly-labels">
+                        <span>Now</span>
+                        <span>12 PM</span>
+                        <span>1 PM · 31°</span>
+                        <span>3 PM</span>
+                        <span>5 PM</span>
+                        <span>7 PM</span>
+                    </div>
 
                 </div>
             </div>
@@ -86,7 +112,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="app.js"></script>
 </body>
 
