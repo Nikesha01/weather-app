@@ -80,7 +80,6 @@ async function getWeather(city) {
     }
 }
 
-getWeather();
 
 function renderHourlyForecast(data) {
 
@@ -92,7 +91,6 @@ function renderHourlyForecast(data) {
 
     const allHours = todayHours.concat(tomorrowHours);
 
-    // Get the next 7 hours, including the current hour
     const hourlyData = allHours.slice(currentHour, currentHour + 7);
 
     if (hourlyData.length === 0) {
@@ -319,13 +317,11 @@ getWeather("Colombo");
 
 function renderSunriseSunset(data) {
 
-    // Get sunrise and sunset from WeatherAPI
     const astro = data.forecast.forecastday[0].astro;
 
     const sunrise = astro.sunrise;
     const sunset = astro.sunset;
 
-    // Update the labels
     document.getElementById("sunrise-label").textContent =
         "Sunrise " + sunrise;
 
