@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #131D30;
 }
 
@@ -38,7 +38,7 @@ body{
 
 .searchBox input::placeholder {
     color: #8290A5;
-    
+
 }
 
 .search-container {
@@ -48,17 +48,17 @@ body{
     margin-bottom: 20px;
 }
 
-.search-button{
-     background-color: rgba(7, 3, 12, 0.05);
-      color: #8290A5;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
+.search-button {
+    background-color: rgba(7, 3, 12, 0.05);
+    color: #8290A5;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-.search-button:hover{
-     background-color: black;
+.search-button:hover {
+    background-color: black;
 }
 
 .main-container {
@@ -75,27 +75,28 @@ body{
     overflow: hidden;
 }
 
-.main-container h4{
+.main-container h4 {
     color: #8290A5;
     margin-bottom: 10px;
 }
 
-.main-container h2{
+.main-container h2 {
     color: aliceblue;
     font-style: bold;
     font-family: "Yuyu", sans-serif;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.main-container h1{
+
+.main-container h1 {
     font-size: 80px;
-      color: aliceblue;
-      font-family: "Titillium Web", sans-serif;
-     margin-top: 0;
-     margin-bottom: 10px;
+    color: aliceblue;
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-#weather-feel{
+#weather-feel {
     margin-top: 0;
     color: orange;
 }
@@ -156,30 +157,51 @@ body{
     font-family: Arial, sans-serif;
 }
 
-.sub-container{
+.sub-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.row{
-    width: 120px;
-    height: 30px;
-     background-color: rgba(255, 255, 255, 0.05);
-     border-radius: 12px;
-     padding: 15px;
-     margin-top: 20px;
-     margin-left: 20px;
-     
+.row {
+    width: 150px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+
 }
 
-.col{
+.row h4 {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #8290A5;
+    margin-bottom: 10px;
+}
+
+.row h3 {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style: bold;
+    font-family: "Yuyu", sans-serif;
+    color: white;
+}
+
+.row span {
+    color: orange;
+}
+
+.col {
     display: flex;
     align-items: right;
-    gap: 10px; 
+    gap: 10px;
 }
 
-.outlook{
+.outlook {
     width: 400px;
     height: 700px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -190,6 +212,7 @@ body{
     box-sizing: border-box;
     margin-left: 20px;
 }
+
 .content-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 340px;
@@ -212,4 +235,3 @@ body{
     padding: 20px;
     box-sizing: border-box;
 }
-
