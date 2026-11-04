@@ -21,10 +21,39 @@
             </div>
             <button type="button" class="search-button">Search</button>
         </div>
+
         <div class="content-layout">
             <div class="left-content">
                 <div class="main-container">
+                    <h4>Monday, 4 November. 2:48</h6>
+                        <h2>Colombo , Sri Lanka</h2>
+                        <h1>29&deg;C</h1>
+                        <h4 id="weather-feel">Partly Sunny . Feels like 33&deg;</h4>
 
+
+                        <div class="sun-arc">
+                            <svg viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" class="sun-arc-svg">
+
+                                <path class="arc-dotted" d="M 20 210 A 210 190 0 0 1 440 210" />
+
+                                <path class="arc-orange" d="M 20 210 A 210 190 0 0 1 300 40" />
+
+                                <circle cx="300" cy="40" r="27" class="sun-glow" />
+
+                                <circle cx="300" cy="40" r="15" class="sun" />
+
+                                <line x1="0" y1="210" x2="460" y2="210" class="horizon" />
+
+                                <text x="20" y="228" class="sun-label">
+                                    Sunrise 6:02
+                                </text>
+
+                                <text x="440" y="228" text-anchor="end" class="sun-label">
+                                    Sunset 17:56
+                                </text>
+
+                            </svg>
+                        </div>
                 </div>
 
                 <div class="sub-container">
@@ -52,6 +81,8 @@
             </div>
         </div>
     </div>
+    
+    <script src="app.js"></script>
 </body>
 
 </html>

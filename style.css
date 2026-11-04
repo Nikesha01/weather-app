@@ -61,16 +61,99 @@ body{
      background-color: black;
 }
 
-.main-container{
-    width: 700px;
-    height: 270px;
+.main-container {
+    width: 100%;
+    min-height: 316px;
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 20px;
-    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 26px;
+    padding: 32px;
+    margin-top: 0;
+    margin-left: 0;
     position: relative;
     box-sizing: border-box;
-    margin-left: 20px;
+    overflow: hidden;
+}
+
+.main-container h4{
+    color: #8290A5;
+    margin-bottom: 10px;
+}
+
+.main-container h2{
+    color: aliceblue;
+    font-style: bold;
+    font-family: "Yuyu", sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.main-container h1{
+    font-size: 80px;
+      color: aliceblue;
+      font-family: "Titillium Web", sans-serif;
+     margin-top: 0;
+     margin-bottom: 10px;
+}
+
+#weather-feel{
+    margin-top: 0;
+    color: orange;
+}
+
+
+.sun-arc {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    width: 57%;
+    max-width: 460px;
+    z-index: 1;
+}
+
+.sun-arc-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+
+.arc-dotted {
+    fill: none;
+    stroke: #304364;
+    stroke-width: 3;
+    stroke-dasharray: 3 9;
+    stroke-linecap: round;
+}
+
+
+.arc-orange {
+    fill: none;
+    stroke: #ffb33f;
+    stroke-width: 4;
+}
+
+
+.sun-glow {
+    fill: rgba(255, 179, 63, 0.25);
+}
+
+
+.sun {
+    fill: #ffb33f;
+}
+
+
+.horizon {
+    stroke: #304364;
+    stroke-width: 1.5;
+}
+
+
+.sun-label {
+    fill: #9baac0;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
 }
 
 .sub-container{
@@ -129,3 +212,4 @@ body{
     padding: 20px;
     box-sizing: border-box;
 }
+
