@@ -1,0 +1,131 @@
+body{
+    background-color: #131D30;
+}
+
+.dashboard {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 15px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.searchBox input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+.searchBox input::placeholder {
+    color: #8290A5;
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-button{
+     background-color: rgba(7, 3, 12, 0.05);
+      color: #8290A5;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+}
+
+.search-button:hover{
+     background-color: black;
+}
+
+.main-container{
+    width: 700px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.sub-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row{
+    width: 120px;
+    height: 30px;
+     background-color: rgba(255, 255, 255, 0.05);
+     border-radius: 12px;
+     padding: 15px;
+     margin-top: 20px;
+     margin-left: 20px;
+     
+}
+
+.col{
+    display: flex;
+    align-items: right;
+    gap: 10px; 
+}
+
+.outlook{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.content-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 22px;
+    align-items: stretch;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.weekly-forecast {
+    width: 100%;
+    min-height: 700px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
