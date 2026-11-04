@@ -175,7 +175,7 @@ body {
 
 }
 
-.row h4 {
+.row span {
     margin-top: 0;
     margin-right: 20px;
     margin-left: 20px;
@@ -191,7 +191,7 @@ body {
     color: white;
 }
 
-.row span {
+.row h3 span{
     color: orange;
 }
 
@@ -307,5 +307,86 @@ body {
 .hourly-labels span {
     color: #9aaac0;
     font-size: 11px;
+    white-space: nowrap;
+}
+
+
+.weekly-forecast {
+    width: 100%;
+    min-height: 700px;
+    background-color: #131e32;
+    border: 1px solid #202e46;
+    border-radius: 26px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.weekly-forecast h3 {
+    color: #eef2fa;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #202b40;
+}
+
+.forecast-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 51px;
+    border-bottom: 1px solid #202b40;
+    box-sizing: border-box;
+}
+
+.forecast-day {
+    width: 34px;
+    flex-shrink: 0;
+    color: #e7edf7;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.forecast-condition {
+    width: 72px;
+    flex-shrink: 0;
+    color: #9baac0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.forecast-bar {
+    flex: 1;
+    min-width: 15px;
+    height: 5px;
+    background-color: #263650;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.forecast-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffb33f;
+}
+
+.forecast-bar-fill.cool {
+    background-color: #55c9e8;
+}
+
+.forecast-bar-fill.cloudy {
+    background-color: #9baac0;
+}
+
+.forecast-temperature {
+    width: 55px;
+    flex-shrink: 0;
+    text-align: right;
+    color: #e7edf7;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
     white-space: nowrap;
 }

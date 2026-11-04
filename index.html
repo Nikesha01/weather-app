@@ -17,17 +17,17 @@
                         d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z">
                     </path>
                 </svg>
-                <input type="text" placeholder="Enter a city">
+                <input type="text" id="city-input" placeholder="Enter a city">
             </div>
-            <button type="button" class="search-button">Search</button>
+            <button type="button" class="search-button" id="search-button">Search</button>
         </div>
 
         <div class="content-layout">
             <div class="left-content">
                 <div class="main-container">
-                    <h4>Monday, 4 November. 2:48</h6>
-                        <h2>Colombo , Sri Lanka</h2>
-                        <h1>29&deg;C</h1>
+                    <h4 id="weather-date">Monday, 4 November. 2:48</h6>
+                        <h2 id="city-name">Colombo , Sri Lanka</h2>
+                        <h1 id="temperature">29&deg;C</h1>
                         <h4 id="weather-feel">Partly Sunny . Feels like 33&deg;</h4>
 
 
@@ -36,7 +36,7 @@
 
                                 <path class="arc-dotted" d="M 20 210 A 210 190 0 0 1 440 210" />
 
-                                <path class="arc-orange" d="M 20 210 A 210 190 0 0 1 300 40" />
+                                <path  id="arc-orange" class="arc-orange" d="M 20 210 A 210 190 0 0 1 300 40" />
 
                                 <circle cx="300" cy="40" r="27" class="sun-glow" />
 
@@ -44,11 +44,11 @@
 
                                 <line x1="0" y1="210" x2="460" y2="210" class="horizon" />
 
-                                <text x="20" y="228" class="sun-label">
+                                <text id="sunrise-label" x="20" y="228" class="sun-label">
                                     Sunrise 6:02
                                 </text>
 
-                                <text x="440" y="228" text-anchor="end" class="sun-label">
+                                <text id="sunset-label" x="440" y="228" text-anchor="end" class="sun-label">
                                     Sunset 17:56
                                 </text>
 
@@ -58,21 +58,21 @@
 
                 <div class="sub-container">
                     <div class="row">
-                        <h4>Humidity</h4>
-                        <h3>78%</h3>
+                        <span>Humidity</span>
+                        <h3 id="humidity">78%</h3>
 
                     </div>
                     <div class="row">
-                        <h4>Wind</h4>
-                        <h3>14 Km/h</h3>
+                        <span>Wind</span>
+                        <h3 id="wind">14 Km/h</h3>
                     </div>
                     <div class="row">
-                        <h4>UV index</h4>
-                        <h3>9 <span>very high</span></h3>
+                        <span>UV index</span>
+                        <h3 id="uv-index">9<span>very high</span></h3>
                     </div>
                     <div class="row">
-                        <h4>Rain chance</h4>
-                        <h3>60%</h3>
+                        <span>Rain chance</span>
+                        <h3 id="rain-chance">60%</h3>
                     </div>
                 </div>
 
@@ -108,6 +108,10 @@
             </div>
 
             <div class="weekly-forecast">
+                <h3>7-day outlook</h3>
+                <div id="weekly-list">
+
+                </div>
 
             </div>
         </div>
